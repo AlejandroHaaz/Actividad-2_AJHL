@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6f7ee7e618.js" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+</head>
+<body class="bg-">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"> <!--se le agregó bg-dark, navbar-dark, py-3 (hace que la barra se vea más ancha), fixed-top (hace que se fije la navbar) y se borró bg-body-tertiary-->
+        <div class="container-fluid"> <!-- container- fluid hace que ocupe toda la pantalla, si usa solo container ya no ocupa todo la pantalla y deja un espacio en los costados-->
+          <a class="navbar-brand" href="#">Anahuac</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                  <li><a class="dropdown-item" href="#">Productos</a></li>
+                  <li><a class="dropdown-item" href="#">Clientes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass-location"></i> Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--Sección 1-->
+      <section class="bg-dark text-light p-5 text-sm-start my-3"> <!--bg (background), p es padding (margen interior), sm (pequeño)-->
+        <div class="container-fluid"> <!-- salió escribiendo div.container-->
+          <div class="d-sm-flex align-items-center justify-content-between"> <!-- Hace que todo se vea como en columnas-->
+            <div>
+            <h2>Volvernos <span class="text-warning"> Desarrolladores de Aplicaciones Web</span></h2>
+            <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn btn-warning btn-lg">Inscribirnos</button> <!-- primary (color primario) lg (grande)-->
+            </div> 
+            <img src="./img/showcase.svg" alt="" class="img-fluid w-50 d-none d-sm-block"> <!--escribimos img.img-fluid-->
+          </div>
+        </div>
+      </section>
+   
+
+      <!--Sección 2-->
+      <section class="bg-dark text-light p-5 texte-sm-start">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/Panorama1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/Panorama1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/Panorama1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-sm-flex align-items-center justify-content-between"> <!-- Hace que todo se vea como en columnas-->
+                  <div>
+                  <h2>Contratamos en <hr><span class="text-warning"> ¡Diferentes paises!</span></h2>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nihil, corporis quisquam animi neque rem incidunt ducimus at, optio distinctio odio velit odit illum praesentium! Veniam!</p>
+              </div>
+        </div>
+      </section>
+
+
+      <!--Section 3-->
+      <section class="bg-dark text-light text-sm-start">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <!--Tarjeta 1-->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/Web.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollador Web</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum facere cum iure repudiandae.</p>
+                  <a href="#" class="btn btn-primary">Ver vacantes</a>
+                </div>
+              </div>
+              <!--Fin de tarjeta 1-->
+            </div>
+            <div class="col-sm">
+              <!--Tarjeta 2-->
+              <div class="card" style="width: 18rem;">
+                <img src="./img/Web.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollador de Juegos</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum facere cum iure repudiandae.</p>
+                  <a href="#" class="btn btn-primary">Ver vacantes</a>
+                </div>
+              </div>
+              <!--Fin de tarjeta 2-->
+            </div>
+            <div class="col-sm">
+               <!--Tarjeta 3-->
+               <div class="card" style="width: 18rem;">
+                <img src="./img/Web.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollador de Software</h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum facere cum iure repudiandae.</p>
+                  <a href="#" class="btn btn-primary">Ver vacantes</a>
+                </div>
+              </div>
+              <!--Fin de tarjeta 3-->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
